@@ -28,8 +28,4 @@ jobs:
       - uses: actions/setup-node@v1
         with:
           node-version: "12.x"
-      - name: Setup Stylelint
-        run: |
-          [ -f .stylelintrc.json ] || wget https://raw.githubusercontent.com/microverseinc/linters-config/master/ror/.stylelintrc.json
-      - name: Stylelint Report
-        run: npx stylelint "**/*.{css,scss}"
+          
